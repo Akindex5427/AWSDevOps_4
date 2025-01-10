@@ -1,0 +1,21 @@
+# buildspec yaml code for apache2 httpd web server
+
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - sudo apt-get update -y
+      - sudo apt-get install apache2 -y
+  build:
+    commands:
+      - echo Build started on date
+      - sudo cp -r ./* /var/www/html
+  post_build:
+    commands:
+      - echo Application deployed successfully on date
+artifacts:
+  files:
+    - "**/*"

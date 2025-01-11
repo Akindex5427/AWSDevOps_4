@@ -1,0 +1,6 @@
+# Ignore appspec.yml, buildspec.yml, install_server.sh, and start_server.sh
+
+appspec.yml
+buildspec.yml
+install_server.sh
+start_server.sh

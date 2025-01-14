@@ -1,5 +1,4 @@
 # docker file using the verfied apache2 httpd image
-
 FROM httpd:2.4
 
 # Copy the html files to the apache2 server
